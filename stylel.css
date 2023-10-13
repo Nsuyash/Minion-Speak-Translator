@@ -2,11 +2,12 @@
 
 :root{
     --primary-one: #eab308;
+    --txt-font:'Kalam', cursive;
 }
 
 body{
     font-family: 'Kalam', cursive;
-    margin: 0rem 5rem;
+    margin: 0rem 4rem;
 }
 
 .header{
@@ -24,6 +25,7 @@ textarea{
     margin: 2rem;
     width: 30%;
     height: 10vh;
+    font-family: var(--txt-font);
 }
 
 .content{
@@ -50,6 +52,7 @@ button{
     height: 10vh;
     margin: 2rem;
     padding: 1rem;
+    overflow: scroll;
 }
 footer{
     display: block;
@@ -60,5 +63,8 @@ footer{
     padding: 0.33rem 15rem;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
+    margin-right: 4rem;
+    position: fixed;
+    bottom: 0;
 }
 
