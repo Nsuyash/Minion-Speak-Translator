@@ -6,10 +6,10 @@ var btnTranslate = document.querySelector("#btn-translate") // Here we query has
 
 var txtInput = document.querySelector("#txt-input"); // Here I have selected the textarea using id="txt-input"
 
-var txtOutput = document.querySelector("#txt-Output"); // Here I selected ouput box which I have created
+var txtOutput = document.querySelector("#Txt-Output"); // Here I selected ouput box which I have created
 
 
-var serverURL = "https://api.funtranslations.com/translate/minion.json"
+var serverURL = "https://api.funtranslations.com/translate/minion.json";
 
 
 //write a function to get input in URL .json?text="I am suyash" text
@@ -31,7 +31,7 @@ function clickEventListener() {
             var translatedText = json.contents.translated;
             txtOutput.innerText = translatedText;
         })
-        .catch(error => alert("server is down"))
+        .catch(error => alert("Server is down!! Sorry you can try after sometime..."))
 
 }
 

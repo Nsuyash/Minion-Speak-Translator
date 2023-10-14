@@ -1,70 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
 
 :root{
-    --primary-one: #eab308;
+    --primary-color: #a5b4fc;
+    --black-color: black;
     --txt-font:'Kalam', cursive;
+    --width-break: 600px;
 }
 
 body{
     font-family: 'Kalam', cursive;
-    margin: 0rem 4rem;
+    margin: 0px;
+    color: var(--black-color);
 }
 
-.header{
-    padding: 0.1rem;
-    background-color: var(--primary-one);
+nav{
+    background-color: var(--primary-color);
     text-align: center;
-    font-size: large;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+main{
+    margin: auto;
+    padding: 1rem;
+    max-width: var(--width-break);
 }
 
 textarea{
+    box-sizing: border-box;
     display: block;
-    padding: 1rem;
-    margin: 2rem;
-    width: 30%;
-    height: 10vh;
+    width: 100%;
+    min-height: 20vh;
+    margin-top: 2rem;
+    font-size: large;
     font-family: var(--txt-font);
 }
 
-.content{
-    display: flex;
-    justify-content: center;
-    padding: 0rem;
-}
 button{
-    display: block;
-    padding: 0.8rem 2rem;
+    background-color: var(--primary-color);
+    border: none;
+    margin: 1rem 0rem;
+    padding: 1rem 2rem;
+    font-family: var(--txt-font);
+    font-size: large;
 }
 
-.output-header{
-    font-weight: bold;
+div{
     text-align: center;
-    padding-top: 1rem;
-    
+    display: block;
 }
 
-#txt-Output{
-    width: 30%;
-    border: 1px solid black;
-    display: block;
-    height: 10vh;
-    margin: 2rem;
-    padding: 1rem;
+#Txt-Output{
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 10vh;
+    max-height: 20vb;
     overflow: scroll;
+    border: 1px solid var(--black-color);
+    padding: 1rem;
+    font-size: large;
 }
+
 footer{
-    display: block;
-    background-color: var(--primary-one);
-    padding: 0.3rem;
-    text-align: center;
-    align-content: center;
-    padding: 0.33rem 15rem;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-    margin-right: 4rem;
     position: fixed;
     bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    text-align: center;
 }
 
+footer p{
+    max-width: var(--width-break);
+    margin: auto;
+}
